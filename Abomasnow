@@ -1,0 +1,16 @@
+package ru.ifmo.se.pokemon;
+
+public class Abomasnow extends Pokemon {
+    public Abomasnow( String name,int level){
+        super(name, level);
+        super.setStats(90,92, 75, 92, 85, 60);
+        super.setType(Type.GRASS, Type.ICE);
+        IceBeam IceBeam = new IceBeam(90, 100);
+        Blizzard Blizzard = new Blizzard(110, 70);
+        AboRest AboRest = new AboRest(90, 100);
+        Bulldoze Bulldoze = new Bulldoze(60, 100);
+        super.setMove(IceBeam,Blizzard,AboRest ,Bulldoze);
+
+    }
+
+}
